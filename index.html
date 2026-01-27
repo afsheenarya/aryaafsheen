@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+        <title>Arya Afsheen</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/avatar.png" type="image/png">
+    </head>
+    <body>
+        <!--Audio Elements-->
+        <audio id="bg-music" src="assets/sounds/bg.mp3" preload="auto" loop></audio>
+        <audio id="click-sound" src="assets/sounds/click.mp3" preload="auto"></audio>
+        <audio id="type-sound" src="assets/sounds/typing.mp3" preload="auto"></audio>
+
+        <!--Background Effects-->
+        <div id="stars"></div>
+        <div id="sparkle-container"></div>
+
+        <!--Top Bar-->
+        <div class="top-bar">
+            <img id="music-toggle" src="assets/music-off.png" alt="Music Toggle">
+
+            <div class="social-icons">
+                <a href="https://github.com/afsheenarya">
+                    <img class="icon-img-2" src="assets/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/aryaafsheen/">
+                    <img class="icon-img-3" src="assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:aafsheen@uwaterloo.ca">
+                    <img class="icon-img-1" src="assets/email.png" alt="Email">
+                </a>
+            </div>
+        </div>
+
+        <!--Main Scene-->
+        <div class="scene">
+            <!--Bottom-left Avatar-->
+            <img id="av2" class="avatar-img" alt="Avatar" src="assets/avatar.png">
+
+            <!--Right Column-->
+            <div class="right-column">
+
+                <!--Bakery (Top-right clickable object)-->
+                <img id="bakery-outside" alt="Bakery" src="assets/bakery.png">
+
+                <!--Bottom-right text box & avatar-->
+                <div class="text-box-container">
+                    <img id="av" class="text-box-img" alt="Text Box" src="assets/text-box.png">
+                    <p id="scene-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Sidebar Navigation-->
+        <div class="sidebar">
+            <p id="abt-side" class="bounce-text"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></p>
+            <p id="edu-side" class="bounce-text"><span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span></p>
+            <p id="exp-side" class="bounce-text"><span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span></p>
+            <p id="proj-side" class="bounce-text"><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span></p>
+            <p id="menu-side" class="bounce-text"><span>M</span><span>e</span><span>n</span><span>u</span></p>
+        </div>
+
+        <!--Big Menu Container-->
+        <div id="big-menu" class="hidden">
+            <img id="b-menu" src="assets/big-menu.png" alt="Menu background">
+
+            <div class="menu-grid">
+                <img id="edu-icon" data-tooltip="Education" src="assets/education.png" alt="Education Icon" class="menu-icon">
+                <img id="exp-icon" data-tooltip="Experience" src="assets/experience.png" alt="Experience Icon" class="menu-icon">
+                <img id="proj-icon" data-tooltip="Projects" src="assets/projects.png" alt="Projects Icon" class="menu-icon">
+                <img id="abt-icon" data-tooltip="About Me" src="assets/abt-me.png" alt="About Me Icon" class="menu-icon">
+            </div>
+        </div>
+
+        <!--Education Page-->
+        <div id="edu-page" class="hidden">
+            <img id="page-bg" src="assets/page.png" alt="Page Background">
+            <div class="page-content">
+                <h3>University of Waterloo | 2025-present</h3>
+                <h4>BASc in Management Engineering</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">programming</span>
+                    <span class="skill-tag">operations research</span>
+                    <span class="skill-tag">ui/ux design</span>
+                    <span class="skill-tag">data analysis</span>
+                    <span class="skill-tag">systems thinking</span>
+                </div>
+                <h3>Victoria Park CI | 2021-2025</h3>
+                <h4>IB Diploma & Ontario Secondary School Diploma</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">research skills</span>
+                    <span class="skill-tag">leadership</span>
+                    <span class="skill-tag">collaboration</span>
+                    <span class="skill-tag">critical thinking</span>
+                </div>
+                <hr>
+                <h3>Johns Hopkins University | Jun-Aug 2023</h3>
+                <h4>Global Health Leaders Conference 🌎</h4>
+                <ul>
+                    <li>Selected attendee</li>
+                    <li>Engaged with topics in public health systems, equity + interdisciplinary problem-solving</li>
+                    <li>Worked on mini-project about maternal mortality</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Experience Page-->
+        <div id="exp-page" class="hidden">
+            <img id="page-bg" src="assets/page.png" alt="Page Background">
+            <div class="page-content">
+                <h3>Professional</h3>
+                <p><strong>Summer Student @ Department of Research 🧪</strong></p>
+                <p>📍 Access Alliance | Jun-Aug 2025</p>
+                <ul>
+                    <li>Analyzed focus group interviews</li>
+                    <li>Worked with mixed-methods health data</li>
+                    <li>Contributed to youth service needs assessment (publ. 2026)</li>
+                </ul>
+                <hr>
+                <h3>Volunteering</h3>
+                <p><strong>CMO + Prev. Marketing Director 📊</strong></p>
+                <p>📍 Target Alpha Canada | Jul 2023-Jul 2025</p>
+                <ul>
+                    <li>Boosted social media engagement by 50%+ through data-driven marketing</li>
+                    <li>Coordinated weekly execution cycles</li>
+                    <li>Managed timelines for record-high conference registrations</li>
+                </ul>
+                <hr>
+                <h3>Awards</h3>
+                <ul>
+                    <li><strong>DR Interested | 2025:</strong> Top 14 research proposal competition</li>
+                    <li><strong>DECA | 2023-2025:</strong> 10x medallist + 1x provincial champion</li>
+                    <li><strong>Target Alpha Canada | 2023:</strong> Top 20 case @ financial planners’ conference</li>
+                    <li><strong>JOT Competitions | 2022:</strong> Top exam + top case in introduction to business</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Projects Page-->
+        <div id="proj-page" class="hidden">
+            <img id="page-bg" src="assets/page.png" alt="Page Background">
+            <div class="page-content">
+                <h3>Diabetes Risk Predictor | 2025</h3>
+                <video controls width="100%">
+                    <source src="assets/demo2.mp4" type="video/mp4">
+                </video>
+                <a href="https://diabetes-predictor-model-app.streamlit.app/">Try it live!</a>
+                <p>Web app predicting diabetes risk using ML model trained on clinical dataset</p>
+                <div class="skills-container">
+                    <span class="skill-tag">scikit-learn</span>
+                    <span class="skill-tag">python</span>
+                    <span class="skill-tag">machine learning</span>
+                    <span class="skill-tag">pandas</span>
+                    <span class="skill-tag">logistic regression</span>
+                </div>
+                <hr>
+                <h3>Scientific Calculator | 2025</h3>
+                <video controls width="100%">
+                    <source src="assets/demo1.mp4" type="video/mp4">
+                </video>
+                <a href="https://afsheenarya.github.io/calculator/">Try it live!</a>
+                <p>Web calculator combining cute UI + functionality</p>
+                <div class="skills-container">
+                    <span class="skill-tag">ux/ui</span>
+                    <span class="skill-tag">html</span>
+                    <span class="skill-tag">css</span>
+                    <span class="skill-tag">javascript</span>
+                    <span class="skill-tag">front-end dev</span>
+                </div>
+                <hr>
+                <h3>Toffee's Quest | 2023</h3>
+                <video controls width="100%">
+                    <source src="assets/demo3.mp4" type="video/mp4">
+                </video>
+                <p>Platformer + puzzle game to help children learn Java syntax</p>
+                <div class="skills-container">
+                    <span class="skill-tag">object-oriented programming</span>
+                    <span class="skill-tag">java</span>
+                    <span class="skill-tag">java swing</span>
+                    <span class="skill-tag">gui development</span>
+                    <span class="skill-tag">game logic</span>
+                    <span class="skill-tag">ui design</span>
+                </div>
+            </div>
+        </div>
+
+        <!--About Page-->
+        <div id="abt-page" class="hidden">
+            <img id="page-bg" src="assets/page.png" alt="Page Background">
+            <div class="page-content">
+                <h1>Hi, I'm Arya! ₍ᐢ. ̫.ᐢ₎</h1>
+
+                <h2>About 🍀</h2>
+                <ul>
+                    <li>Merging form + function in tech</li>
+                    <li>Interested in healthcare innovation</li>
+                </ul>
+                <hr>
+
+                <h2>Currently 🖥️</h2>
+                <ul>
+                    <li>Building technical & design skills</li>
+                    <li>Exploring healthtech + research</li>
+                </ul>
+                <hr>
+
+                <h2>Offline ☕️</h2>
+                <ul>
+                    <li>Collecting pens</li>
+                    <li>Doodling</li>
+                    <li>Cafe hopping</li>
+                </ul>
+                <hr>
+
+                <h2>Let's Connect!</h2>
+            </div>
+        </div>
+
+        <!--Rotate Warning-->
+        <div class="rotate-warning">
+            <p>please rotate your device ☻</p>
+        </div>
+
+        <!--Script-->
+        <script src="script.js"></script>
+    </body>
+</html>
