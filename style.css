@@ -339,29 +339,25 @@ a {
     color: #b8848c;
 }
 
-/*Adding a warning for portrait mode (not supported yet)*/
-.rotate-warning {
-    position: fixed;
-    inset: 0;
-    background: #756262;
+/*Block mobile devices (in progress, sorry!)*/
+@media (max-width: 900px) {
+  body {
     display: none;
+  }
+
+  html::before {
+    content: "Mobile version in progress (╥﹏╥). Please view on desktop!";
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     font-family: "VT323", monospace;
-    font-size: 7vw;
+    font-size: 2rem;
     text-align: center;
-    z-index: 99999;
-}
-
-.rotate-warning p {
-    color: #fff1dc;
-    margin: 1vw;
-}
-
-@media (orientation: portrait) {
-    .rotate-warning {
-        display: flex;
-    }
+    padding: 2rem;
+    background: #b8848c;
+    color: #f3e8e0;
+  }
 }
 
 
