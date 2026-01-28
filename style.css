@@ -340,7 +340,7 @@ a {
 }
 
 /*Block mobile devices (in progress, sorry!)*/
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   body {
     display: none;
   }
