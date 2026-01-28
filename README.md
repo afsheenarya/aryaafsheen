@@ -12,4 +12,4 @@ A personal website/portfolio exploring the limits of UI/UX design and front-end 
 https://afsheenarya.github.io/aryaafsheen/
 
 ## 📌 Notes
-- Only landscape mode is currently supported. You may see a message asking you to rotate your device to view the contents.
+- Please view on desktop! This site is not yet responsive on mobile devices.
