@@ -283,6 +283,13 @@ menuIcons.forEach(icon => {
     });
 });
 
+//Loading screen
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loader").remove();
+  }, 2000);
+});
+
 
 
 
