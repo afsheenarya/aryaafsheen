@@ -13,17 +13,21 @@
 
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="assets/avatar.png" type="image/png">
-
-          <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag("js", new Date());
-            gtag("config", "G-0WY4TBFEV9");
-        </script>
     </head>
     <body>
+        <!--Loading screen-->
+        <div id="loader">
+            <div class="loader-content">
+                <div class="treats">
+                <img src="assets/education.png" alt="Education Icon" class="treat" />
+                <img src="assets/experience.png" alt="Experience Icon" class="treat" />
+                <img src="assets/projects.png" alt="Projects Icon" class="treat" />
+                <img src="assets/abt-me.png" alt="About Me Icon" class="treat" />
+                </div>
+                <p class="loading-text">baking your treats<span class="dots"></span></p>
+            </div>
+        </div>
+
         <!--Audio Elements-->
         <audio id="bg-music" src="assets/sounds/bg.mp3" preload="auto" loop></audio>
         <audio id="click-sound" src="assets/sounds/click.mp3" preload="auto"></audio>
@@ -233,7 +237,7 @@
                 <h2>Let's Connect!</h2>
             </div>
         </div>
-
+        
         <!--Script-->
         <script src="script.js"></script>
     </body>
